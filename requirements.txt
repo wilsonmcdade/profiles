@@ -11,11 +11,18 @@ alembic==1.7.7
 astroid==2.11.5
     # via pylint
 attrs==21.4.0
-    # via ddtrace
+    # via
+    #   cattrs
+    #   ddtrace
+    #   jsonschema
 beaker==1.11.0
     # via oic
 blinker==1.4
     # via sentry-sdk
+bytecode==0.14.0
+    # via ddtrace
+cattrs==22.2.0
+    # via ddtrace
 certifi==2022.5.18.1
     # via
     #   requests
@@ -34,12 +41,14 @@ csh-ldap==2.4.0
     # via -r requirements.in
 ddsketch==2.0.3
     # via ddtrace
-ddtrace==1.1.4
+ddtrace==1.8.0
     # via -r requirements.in
 dill==0.3.5.1
     # via pylint
 dnspython==2.2.1
     # via srvlookup
+envier==0.4.0
+    # via ddtrace
 flask==1.1.4
     # via
     #   -r requirements.in
@@ -65,6 +74,8 @@ future==0.18.2
     # via
     #   oic
     #   pyjwkest
+greenlet==2.0.2
+    # via sqlalchemy
 gunicorn==20.1.0
     # via -r requirements.in
 htmlmin==0.1.12
@@ -77,6 +88,8 @@ itsdangerous==1.1.0
     # via flask
 jinja2==2.11.3
     # via flask
+jsonschema==4.17.3
+    # via ddtrace
 lazy-object-proxy==1.7.1
     # via astroid
 mako==1.2.0
@@ -130,6 +143,8 @@ pyopenssl==22.0.0
     # via oic
 pyparsing==3.0.9
     # via packaging
+pyrsistent==0.19.3
+    # via jsonschema
 python-ldap==3.4.0
     # via csh-ldap
 requests==2.27.1
@@ -154,13 +169,9 @@ srvlookup==2.0.0
 tenacity==8.0.1
     # via ddtrace
 tomli==2.0.1
-    # via
-    #   pep517
-    #   pylint
+    # via pep517
 typing-extensions==4.2.0
-    # via
-    #   astroid
-    #   pylint
+    # via ddtrace
 urllib3==1.26.9
     # via
     #   requests
@@ -173,6 +184,8 @@ wheel==0.37.1
     # via pip-tools
 wrapt==1.14.1
     # via astroid
+xmltodict==0.13.0
+    # via ddtrace
 
 # The following packages are considered to be unsafe in a requirements file:
 # pip
